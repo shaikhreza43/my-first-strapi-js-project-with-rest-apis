@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resolute_ai_cms",
+  "info": {
+    "name": "resolute-ai-cms"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "image_url": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "card_title1": {
+      "type": "string"
+    },
+    "card_text1": {
+      "type": "text"
+    },
+    "card_title2": {
+      "type": "string"
+    },
+    "card_text2": {
+      "type": "text"
+    },
+    "card_title3": {
+      "type": "string"
+    },
+    "card_text3": {
+      "type": "text"
+    }
+  }
+}

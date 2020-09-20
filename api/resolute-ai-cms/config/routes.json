@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/resolute-ai-cms",
+      "handler": "resolute-ai-cms.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/resolute-ai-cms/count",
+      "handler": "resolute-ai-cms.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/resolute-ai-cms/:id",
+      "handler": "resolute-ai-cms.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/resolute-ai-cms",
+      "handler": "resolute-ai-cms.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/resolute-ai-cms/:id",
+      "handler": "resolute-ai-cms.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/resolute-ai-cms/:id",
+      "handler": "resolute-ai-cms.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
